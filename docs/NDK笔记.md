@@ -1,4 +1,8 @@
 //看的目录
+<!-- # -->
+# 命令
+执行
+D:\tool\mingw64\bin\gcc.exe T5.c -o T5.exe; .\T5.exe
 
 //
 .cpp 文件结尾的是c++
