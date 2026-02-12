@@ -1,0 +1,22 @@
+# 可执行文件
+*.exe
+*.out
+
+# 编译产物
+*.o
+*.obj
+*.so
+*.dll
+*.a
+*.lib
+
+# 调试文件
+*.pdb
+*.ilk
+*.exp
+
+# IDE/编辑器（保留 .vscode 便于他人复用编译/调试配置）
+.idea/
+*.swp
+*.swo
+*~
