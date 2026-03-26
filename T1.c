@@ -1,19 +1,13 @@
 #include <stdio.h>
 
-void add(int a, int b){
-    printf("a + b = %d\n", a+b);
-}
-
-void testFunc(void (*func)(int, int)){
-    printf("func = %p\n", func);
-
-    //思考 为什么可以不用写*  函数的上面已经声明了func指针，所以可以不用写*
-    (func)(10, 20);、
-    (*func)(10, 20);
-
-}
-//上节课内容的一个点 函数指针
 int main(){
-    testFunc(add);
+    int arrInt[] = {6,4,8,3,1,2,9,7,0,5};
+    int result = arrInt[*arrInt+*(arrInt+4)];
+    //*arrInt 取值为7
+    //*(arrInt+4) 取值为5
+    //*arrInt+*(arrInt+4) 取值为12
+    //arrInt[12] 取值为12
+    printf("result = %d\n", result);
     return 0;
+    
 }

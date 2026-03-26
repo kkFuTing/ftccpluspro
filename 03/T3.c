@@ -29,6 +29,7 @@ int main(){
 
 
     while(1){
+        sleep(100);
         //无限循环也不会溢出，因为每次执行startcAtion函数，都会进栈，执行完毕后出栈，所以不会溢出
         startcAtion();
     }
